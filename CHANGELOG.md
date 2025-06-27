@@ -1,7 +1,12 @@
-# Dev V2.0.0
+# Changelog
+All notable changes to this project will be documented in this file.
 
-## Updates
-
-- New CLI commands added.
-- File examples
+## [2.0.0] - 2025-06-26
+### Added
+- CLI Commands
 - Syntax coloring
+- Barebones parser
+- Examples
+Changed
+- File structure
+Fixed
