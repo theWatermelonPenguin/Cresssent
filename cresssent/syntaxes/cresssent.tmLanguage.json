@@ -1,0 +1,124 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Cresssent",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+		,
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#punctuation"
+		},
+		{
+			"include": "#identifiers"
+		},
+		{
+			"include": "#repository.keywords"
+		},
+		{
+			"include": "#repository.strings"
+		},
+		{
+			"include": "#repository.numbers"
+		},
+		{
+			"include": "#repository.constants"
+		},
+		{
+			"include": "#repository.punctuation"
+		},
+		{
+			"include": "#unquotedStrings"
+		},
+		{
+			"include": "#blockNames"
+		}
+	],
+	"repository": {
+	"identifiers": {
+		"patterns": [
+		{
+			"name": "entity.name.section.cresssent",
+			"match": "\\b(LABEL)\\b"
+		},
+		{
+			"name": "variable.other.cresssent",
+			"match": "^[ \\t]*[a-zA-Z_][a-zA-Z0-9_]*(?=\\s*=)"
+		}
+		]
+	},
+	"keywords": {
+		"patterns": [
+		{
+			"name": "keyword.control.cresssent",
+			"match": "\\b(if|while|for|return)\\b"
+		}
+		]
+	},
+	"strings": {
+		"name": "string.quoted.double.cresssent",
+		"begin": "\"",
+		"end": "\"",
+		"patterns": [
+		{
+			"name": "constant.character.escape.cresssent",
+			"match": "\\\\."
+		}
+		]
+	},
+	"numbers": {
+		"patterns": [
+		{
+			"name": "constant.numeric.cresssent",
+			"match": "\\b\\d+(\\.\\d+)*\\b"
+		}
+		]
+	},
+	"constants": {
+		"patterns": [
+		{
+			"name": "constant.language.boolean.cresssent",
+			"match": "\\b(active|applied|true|false|TBD)\\b"
+		}
+		]
+	},
+	"punctuation": {
+		"patterns": [
+		{
+			"name": "punctuation.section.braces.cresssent",
+			"match": "[{}]"
+		},
+		{
+			"name": "keyword.operator.assignment.cresssent",
+			"match": "="
+		}
+		]
+	},
+	"unquotedStrings": {
+		"patterns": [{
+			"name": "string.unquoted.cresssent",
+			"match": "(?<=\\=\\s)([a-zA-Z0-9_.\\- ]+)(?=$|\\n|\\r)"
+		}]
+	},
+	"blockNames": {
+	"patterns": [
+		{
+		"name": "entity.name.block.cresssent",
+		"match": "^[ \\t]*[a-zA-Z_][a-zA-Z0-9_]*(?=\\s*\\{)"
+		}
+	]
+	}
+
+
+	},
+	"scopeName": "source.cresssent"
+}

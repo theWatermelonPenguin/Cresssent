@@ -1,0 +1,27 @@
+LABEL = Cresssent Enviroment
+
+envoirment{
+    database{
+        type = 
+        credentials{
+            username = databaseuser
+            password = password
+        }
+    }
+    server{
+        host = localhost
+        port = 8080
+        autoReload = active
+    }
+    runtime{
+        FlourMill = 
+    }
+    product{
+        version = 1.0.0
+        info = This is my product
+    }
+    logging{
+        level = general
+        output = console
+    }
+}

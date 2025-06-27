@@ -1,0 +1,37 @@
+{
+  "name": "cresssent",
+  "displayName": "cresssent-syntax",
+  "description": "Syntax highlighting and support for Cresssent files",
+  "version": "0.0.1",
+  "icon": "ZeeResizer.png",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "cresssent",
+        "aliases": ["Cresssent", "cresssent"],
+        "extensions": [".crsnte, .crsntwd"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "cresssent",
+        "scopeName": "source.cresssent",
+        "path": "./syntaxes/cresssent.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Cresssent Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cresssent-color-theme.json"
+      }
+    ]
+  }
+}

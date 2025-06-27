@@ -1,0 +1,23 @@
+LABEL = Cresssent Web Development
+
+page{                               # the full croissant
+    main{                           # the croissant dough
+        BACKEND{                   # a dough layer (backend connection)
+            FindFunc{              # a sub dough layer
+                find BACKEND.crsntb    # dough folds
+                in dir My-Backend
+            }
+        }
+        title = Cressent analogy        # a dough fold
+    }
+
+    body{                               # the jam
+        header{                         # the fruits
+            size = 1                    # the seeds
+            text = This is Cresssent
+        }
+        image{                          # more fruits
+            src = path.jpg              # more seeds
+        }
+    }
+}

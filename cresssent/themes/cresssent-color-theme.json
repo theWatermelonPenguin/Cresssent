@@ -1,0 +1,58 @@
+{
+  "name": "Cresssent Theme",
+  "type": "dark",
+  "colors": {},
+    "tokenColors": [
+    {
+      "scope": "string.unquoted.cresssent",
+      "settings": {
+        "foreground": "#ce9178"
+      }
+    },
+    {
+      "scope": "constant.numeric.cresssent",
+      "settings": {
+        "foreground": "#439645"
+      }
+    },
+    {
+      "scope": "entity.name.section.cresssent",
+      "settings": {
+        "foreground": "#3eedc9",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "keyword.operator.assignment.cresssent",
+      "settings": {
+        "foreground": "#569cd6"
+      }
+    },
+    {
+      "scope": "punctuation.section.braces.cresssent",
+      "settings": {
+        "foreground": "#D283FF"
+      }
+    },
+    {
+      "scope": "entity.name.block.cresssent",
+      "settings": {
+        "foreground": "#da70d6", // golden yellow for block openers like `server{`
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "variable.other.cresssent",
+      "settings": {
+        "foreground": "#7FDBFF",
+        "fontStyle": "bold",
+      }
+    },
+    {
+      "scope": "constant.language.boolean.cresssent",
+      "settings": {
+        "foreground": "#FFF75B"
+      }
+    }
+  ]
+}

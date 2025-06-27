@@ -1,0 +1,16 @@
+LABEL = Cresssent Backend
+
+variables {
+    username = "Luis"
+    count = 0
+}
+
+backend {
+    GreetUser {
+        print "Hello, " + username
+    }
+
+    IncrementCount {
+        count = count + 1
+    }
+}
